@@ -2,6 +2,8 @@
 from random import seed
 from random import randint
 
+quantity = int(input("Insira a quantidade de números: "))
+
 # ------------------------------------------
 
 list = open("numbers.txt")
@@ -24,8 +26,8 @@ if(len(primesLines) > 0):
 
 # ------------------------------------------
 
-for i in range(500):
-    value = randint(0, 500)
+for i in range(quantity):
+    value = randint(0, quantity)
     list = open("numbers.txt", "a")
     list.write(str(value) + "\n")
 
